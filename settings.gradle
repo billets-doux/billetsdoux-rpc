@@ -1,0 +1,4 @@
+rootProject.name = 'billetsdoux-rpc'
+include 'billetsdoux-common'
+include 'billetsdoux-remoting'
+

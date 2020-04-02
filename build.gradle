@@ -1,0 +1,41 @@
+allprojects {
+    apply plugin :"java"
+    group 'org.billetsdoux'
+    version '1.0-SNAPSHOT'
+
+    sourceCompatibility = 13
+
+    repositories {
+        mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+        // https://mvnrepository.com/artifact/io.netty/netty-all
+        compile group: 'io.netty', name: 'netty-all', version: '4.1.42.Final'
+        // https://mvnrepository.com/artifact/io.protostuff/protostuff-runtime
+        compile group: 'io.protostuff', name: 'protostuff-runtime', version: '1.6.0'
+        // https://mvnrepository.com/artifact/io.protostuff/protostuff-runtime
+        compile group: 'io.protostuff', name: 'protostuff-core', version: '1.6.0'
+        // https://mvnrepository.com/artifact/org.objenesis/objenesis
+        testCompile group: 'org.objenesis', name: 'objenesis', version: '2.6'
+// https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy
+        compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.8'
+        // https://mvnrepository.com/artifact/cglib/cglib
+        compile group: 'cglib', name: 'cglib', version: '2.2.2'
+// https://mvnrepository.com/artifact/com.alibaba/fastjson
+        compile group: 'com.alibaba', name: 'fastjson', version: '1.2.58'
+// https://mvnrepository.com/artifact/com.esotericsoftware/kryo
+        compile group: 'com.esotericsoftware', name: 'kryo', version: '4.0.0'
+// https://mvnrepository.com/artifact/org.xerial.snappy/snappy-java
+        compile group: 'org.xerial.snappy', name: 'snappy-java', version: '1.1.7.3'
+
+
+
+
+
+    }
+
+}
